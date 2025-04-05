@@ -396,6 +396,8 @@ export default {
 							if (defaultTargetLanguage) {
 								tt.inputShapeDefaults.target_language = defaultTargetLanguage
 							}
+						} else if (tt.id === 'core:text2speech') {
+							tt.inputShape.input.placeholder = t('assistant', 'Type or paste the text to generate speech from')
 						}
 					})
 					this.taskTypes = taskTypes
